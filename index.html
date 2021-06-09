@@ -7,13 +7,38 @@
     <title>Coding Quiz</title>
     <link rel="stylesheet" href="./assets/css/style.css"/>
 </head>
-<body>
-    <div id="startScreen">
+<body class="body">
+
+    <div id="timer" class="timer"> TIME LEFT: <span id="clock">60</span></div>
+    <div id="startScreen" class="startscreen">
         <h1>Coding Quiz</h1>
+        <p class="timeInfo">
+            You have 1 min to complete the quiz 
+        </p>
         <p>
-            You have 1 min to complete the quiz
+            Every wrong answer will result in -10 from your time!
         </p>
         <button id="btnStart"> Start Quiz</button>
+    </div>
+    <div id="displayQuestions" class="hide">
+        <h2 id="question">
+            Sample Question
+        </h2>
+        <div class="answerButtons">
+            <button id="btn1" class="btn"> Answer 1</button>
+            <button id="btn2" class="btn"> Answer 2</button>
+            <button id="btn3" class="btn"> Answer 3</button>
+            <button id="btn4" class="btn"> Answer 4</button> 
+        </div>
+        <p id="correct"></p>
+        
+
+    </div>
+    <div id="scoreBoard" class="hide">
+         <p id="score"> Your Score is : </p>
+       
+        <input id="playerInitials" max="3" placeholder="Please enter intials here" />
+        <button id="btnSubmit">Submit Score</button>
     </div>
     <script src="./assets/js/script.js"></script>
 </body>
